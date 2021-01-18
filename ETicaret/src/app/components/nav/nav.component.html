@@ -1,0 +1,41 @@
+<div class="position-relative">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="product">BOOK STORE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="product" >ANASAYFA</a>
+            </li>            
+          </ul>
+        </div>
+        <button class="btn btn-outline-danger" style="float:right" (click)="OturumKapat()"
+        *ngIf="fbServis.OturumKontrol()">Oturumu
+        Kapat</button>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white"  href="uyeGiris"  aria-current="page" ><i class="fa fa-user" aria-hidden="true"></i>
+              ÜYE GİRİŞİ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="uyeOl"><i class="fa fa-user" aria-hidden="true"></i>
+              ÜYE OL </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="sepetim"><i class="fa fa-shopping-cart"
+                aria-hidden="true"></i>SEPETİM </a>
+          </li>
+        </ul>
+        <div class="col">
+          <form class="d-flex ">
+            <input class="form-control me-2" type="search" placeholder="ARA" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">ARA</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>

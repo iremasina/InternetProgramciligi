@@ -1,0 +1,35 @@
+<div class="row md-center">
+  <div class="col-md-6">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0 bg-dark text-white">{{tabloAdi}}</p>
+    </blockquote>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Kategori Adı</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-dark text-dark" *ngFor="let Category of categories">
+          <th scope="row">{{Category.id}}</th>
+          <td>{{Category.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0 bg-dark text-white">{{title}} </p>
+    </blockquote>
+    <div class="form-group">
+      <label for="inputCategory" class="col-form-label">Düzenlemek istediğin kategoriyi seç!</label>
+      <input type="Category" class="form-control" id="inputCategory">
+    </div>
+    <div>
+     <button type="button" class="btn btn-outline-dark mr-3  " type="submit"> DÜZENLE </button> 
+     <button type="button" class="btn btn-outline-dark mr-3  " type="submit"> EKLE </button> 
+    <button type="button" class="btn btn-outline-dark " type="reset"> SİL </button> 
+</div>
+</div>
+</div>

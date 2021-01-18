@@ -1,0 +1,2 @@
+[0115/060506.596:ERROR:process_info.cc(359)] UncheckedAllocate
+[0115/061503.448:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
