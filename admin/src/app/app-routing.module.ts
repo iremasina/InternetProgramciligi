@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [ 
-   {path:'category', component: CategoryComponent},
-  {path:'/', component:ProductComponent},
+  {path:'category', component: CategoryComponent},
+  {path:'', component:AdminComponent},
   {path:'product', component:ProductComponent}
 
 ];
